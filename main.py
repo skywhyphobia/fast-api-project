@@ -1,11 +1,19 @@
+
 from fastapi import FastAPI
+import codecs
 
 # Создаем экземпляр приложения
 app = FastAPI()
 
-# Декоратор определяет HTTP-метод (GET) и путь (корневой "/")
+text = "Hello, World"
+
+print(text)
+
+"""
 @app.get("/00")
 def read_root():
-    # Возвращаем JSON-ответ
-    return {"Hello": "World"}
+   return codecs.encode(this.s, 'rot_13')
+"""
 
+
+#ctrl + .
